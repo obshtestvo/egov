@@ -1,0 +1,14 @@
+@import "egov-icons";
+@import "drop-tooltip";
+@import "general";
+@import "polymer";
+@import "lumx-breakdown/icons";
+@import "lumx-breakdown/button";
+@import "lumx-breakdown/fab";
+@import "magnificPopup";
+@import "home";
+@import "dash";
+
+.waves-effect {
+  @include transition-duration(all 0.2s ease-out !important);
+}

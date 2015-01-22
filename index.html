@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>egov</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<script src="/static/lib/webcomponentsjs/webcomponents.js"></script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,100,300,700italic,900,500&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link rel="import" href="/static/lib/paper-input/paper-input.html">
+    <link rel="import" href="/static/lib/paper-ripple/paper-ripple.html">
+    <link rel="import" href="/static/lib/paper-button/paper-button.html">
+    <link rel="stylesheet" href="/static/lib/waves/dist/waves.min.css">
+    <link rel="stylesheet" href="/static/lib/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="/static/lib/drop/css/drop-theme-arrows-bounce-dark.css">
+    <link rel="stylesheet" href="/static/lib/drop/css/drop-theme-arrows-bounce.css">
+    <link rel="stylesheet" href="/static/lib/drop/css/drop-theme-basic.css">
+    <link rel="stylesheet" href="/static/lib/drop/css/drop-theme-hubspot-popovers.css">
+    <link rel="stylesheet" href="/static/style/app.css">
+</head>
+<body class="home">
+<header>
+    <h2 class="fs-headline caption">Електронно управление</h2>
+
+    <h1 class="fs-display-2"><img src="static/img/heraldry.png" alt=""/> България</h1>
+
+    <div class="login">
+        <div id="login-overlay" class="transparent"></div>
+        <h2 class="fs-subhead heading">Вход</h2>
+
+        <div class="fab drop-theme-arrows.css">
+            <a class="primary open-popup-link" href="#pin-popup">
+                <button class="btn btn--xl btn--blue btn--fab waves-effect waves-light primary">
+                    <i class="mdi mdi--account-circle cover icon"></i>
+                    <i class="main icon i-id-chip"></i>
+                </button>
+                <em class="help"><span class="tooltip">с е-ID</span></em>
+            </a>
+            <div class="actions">
+                <a href="#" class="item"><span class="btn btn--l btn--green btn--fab waves-effect waves-light">
+                <i class="mdi mdi--textsms"></i></span><em class="help"><span class="tooltip">е-ID и СМС</span></em></a>
+                <a href="#" class="item">
+            <span class="btn btn--l btn--deep-orange btn--fab waves-effect waves-light">
+                <i class="mdi mdi--visibility"></i></span><em class="help"><span
+                        class="tooltip">е-ID и ретина</span></em></a>
+                <a href="#" class="item">
+            <span class="btn btn--l btn--purple btn--fab waves-effect waves-light">
+                <i class="i-fingerprint"></i></span><em class="help"><span
+                        class="tooltip">е-ID и отпечатък</span></em></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="tooltips" hidden>
+    <div class="login-tooltip">
+        Влез от <strong>тук!</strong>
+    </div>
+    <div class="sms-tooltip">
+        <p>Освен електронната лична карта <br/> можете да изберете и допълнителна
+            <br/>защита, като получаване на код <br/>по SMS, сканиране на ретина или <br/>пръстов отпечатък</p>
+        <button class="btn btn--xs btn--white btn--raised waves-effect">Разбрах</button>
+    </div>
+</div>
+<div id="pin-popup" class="white-popup mfp-with-anim mfp-hide">
+    <paper-input-decorator label="Пин код" floatingLabel>
+        <input is="core-input" type="password">
+    </paper-input-decorator>
+    <button class="btn btn--m btn--blue btn--raised  waves-effect waves-light">Вход</button>
+</div>
+<script src="/static/lib/zepto/zepto.min.js"></script>
+<script src="/static/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="/static/lib/drop/drop.min.js"></script>
+<script src="/static/lib/waves/dist/waves.min.js"></script>
+<script src="/static/script/app.js"></script>
+</body>
+</html>

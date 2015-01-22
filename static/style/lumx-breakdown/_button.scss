@@ -1,0 +1,75 @@
+@import "../../lib/lumx/dist/scss/main/objects/_objects.button.scss";
+
+$highlightColors: (
+        'red': $red-700,
+        'pink': $pink-700,
+        'purple': $purple-700,
+        'deep-purple': $deep-purple-700,
+        'indigo': $indigo-700,
+        'blue': $blue-700,
+        'light-blue': $light-blue-700,
+        'teal': $teal-700,
+        'green': $green-700,
+        'light-green': $light-green-700,
+        'lime': $lime-700,
+        'yellow': $yellow-700,
+        'amber': $amber-700,
+        'orange': $orange-700,
+        'deep-orange': $deep-orange-700,
+        'brown': $brown-700,
+        'grey': $grey-700,
+        'blue-grey': $blue-grey-700,
+        'black': $black,
+        'white': $white
+);
+$highlightColors2: (
+        'red': $red-800,
+        'pink': $pink-800,
+        'purple': $purple-800,
+        'deep-purple': $deep-purple-800,
+        'indigo': $indigo-800,
+        'blue': $blue-800,
+        'light-blue': $light-blue-800,
+        'teal': $teal-800,
+        'green': $green-800,
+        'light-green': $light-green-800,
+        'lime': $lime-800,
+        'yellow': $yellow-800,
+        'amber': $amber-800,
+        'orange': $orange-800,
+        'deep-orange': $deep-orange-800,
+        'brown': $brown-800,
+        'grey': $grey-800,
+        'blue-grey': $blue-grey-800,
+        'black': $black,
+        'white': $white
+);
+// Raised / FAB buttons
+.btn--raised,
+.btn--fab {
+  @include transition-property(box-shadow, background);
+  @include polymer-z-depth(1);
+
+  &:active {
+    @include polymer-z-depth(2);
+  }
+}
+
+@each $key, $color in $highlightColors {
+  .btn--raised.btn--#{$key},
+  .btn--fab.btn--#{$key} {
+    &:focus,
+    &:hover {
+      background-color: $color;
+    }
+  }
+}
+
+@each $key, $color in $highlightColors2 {
+  .btn--raised.btn--#{$key},
+  .btn--fab.btn--#{$key} {
+    &:focus:hover {
+      background-color: $color;
+    }
+  }
+}

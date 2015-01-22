@@ -1,0 +1,59 @@
+// FAB base styles
+.fab {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+
+  .primary {
+    .icon {
+      @include font-size(24px);
+      @include position(absolute, 0 0 0 0);
+      @include transition-property(transform);
+      @include transition-duration(0.2s);
+
+      &.main {
+        @include transform(scale(0));
+      }
+    }
+  }
+  .actions {
+    z-index: 999;
+    pointer-events: none;
+    @include position(absolute, $size-xl null null 0);
+    width: $size-xl;
+    text-align: center;
+    .item {
+      display: block;
+      margin-top: quarter($base-spacing-unit);
+      @include transform(scale(0));
+      @include transition-property(transform);
+      @include transition-duration(0.2s);
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          @include transition-delay(0.05s * $i);
+        }
+      }
+      .btn {
+        @include transition-property(box-shadow, transform);
+        @include transition-duration(0.2s);
+      }
+    }
+  }
+
+  &.active {
+    .icon {
+      &.cover {
+        @include transform(scale(0));
+      }
+      &.main {
+        @include transform(scale(1));
+      }
+    }
+    .actions {
+      pointer-events: auto;
+      .item {
+        @include transform(scale(1));
+      }
+    }
+  }
+}

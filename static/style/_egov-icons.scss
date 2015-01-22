@@ -1,0 +1,58 @@
+//
+// Icon Font: egov-icons
+//
+
+@font-face {
+  font-family: "egov-icons";
+  src: url("../fonts/egov-icons/egov-icons.eot");
+  src: url("../fonts/egov-icons/egov-icons.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/egov-icons/egov-icons.woff") format("woff"),
+       url("../fonts/egov-icons/egov-icons.ttf") format("truetype"),
+       url("../fonts/egov-icons/egov-icons.svg#egov-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "egov-icons";
+    src: url("../fonts/egov-icons/egov-icons.svg#egov-icons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.i-fingerprint:before,
+.i-fingerprint-simple:before,
+.i-heraldry:before,
+.i-id-chip:before,
+.i-id-mix:before,
+.i-id-text:before {
+  display: inline-block;
+  font-family: "egov-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.i-fingerprint:before { content: "\f100"; }
+.i-fingerprint-simple:before { content: "\f102"; }
+.i-heraldry:before { content: "\f101"; }
+.i-id-chip:before { content: "\f103"; }
+.i-id-mix:before { content: "\f104"; }
+.i-id-text:before { content: "\f105"; }
+
+$font-egov-icons-fingerprint: "\f100";
+$font-egov-icons-fingerprint-simple: "\f102";
+$font-egov-icons-heraldry: "\f101";
+$font-egov-icons-id-chip: "\f103";
+$font-egov-icons-id-mix: "\f104";
+$font-egov-icons-id-text: "\f105";

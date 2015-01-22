@@ -1,0 +1,17 @@
+{
+  "name": "egov",
+  "version": "0.0.1",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "lumx": "~0.2.49",
+    "packery": "*",
+    "draggabilly": "*",
+    "magnific-popup": "*",
+    "waves": "~0.5.5",
+    "zepto": "~1.1.6",
+    "drop": "~0.5.5"
+  }
+}
