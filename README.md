@@ -55,5 +55,4 @@ egov
     ├── script      // app-specific javascripts
     └── style       // app-specific SCSS and overrides of external dependencies styling
         └── lumx-breakdown //
-└── layout
 ```
