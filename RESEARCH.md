@@ -11,7 +11,7 @@
 1. LumX has a better code structure: SASS files are better modularized, colors are extracted in a simpler way, there are some cool media query mixin
 1. Materialize CSS has a better styling for google design "card" component
 1. Ditch Materilize CSS - very limited implementation, use LumX
-1. Ditch Polymer and webcomponents - very easy to reach edge cases and bugs. Webcomponents' page says technology is mature and using polyfills for firefox but it's not mature enough. Should have been stated clearly.
+1. Ditch Polymer and webcomponents - very easy to reach edge cases and bugs. Webcomponents' page says technology is mature and using polyfills for firefox fixes everything, but it's not mature enough. This should have been stated clearly. Disappointing.
 1. Use LumX wonderful modularized SCSS and use only what we need
 1. Build our own styles looking at LumX
 
@@ -19,21 +19,13 @@
 
 ## Polymer & Styling related notes
 
-If editing `egov/static/elements/materialized-element.scss`, you must edit
-`materialize/sass/components/global.scss` from `materialize`
-bower library (located at `egov/static/libs/materialize/sass/components/_global.scss`
-after bower install) and remove the utf8 definition in the start.
-
-
-
-
 If you have a template like this:
 ```
 <link rel="import" href="../libs/polymer/polymer.html">
 
-<polymer-element name="materialized-element" noscript>
+<polymer-element name="material-design-element" noscript>
     <template>
-        <link href="materialized-element.css" rel="stylesheet">
+        <link href="material-design.css" rel="stylesheet">
         <content></content>
     </template>
 </polymer-element>
@@ -42,26 +34,27 @@ If you have a template like this:
 And a sass file like this:
 ```
 ::content {
-  @import "../libs/materialize/sass/components/prefixer.scss";
-  @import "../libs/materialize/sass/components/mixins.scss";
-  @import "../libs/materialize/sass/components/color.scss";
-  @import "../libs/materialize/sass/components/variables.scss";
-  @import "../libs/materialize/sass/components/global.scss";
-  @import "../libs/materialize/sass/components/typography.scss";
-  @import "../libs/materialize/sass/components/cards.scss";
+  @import ... material design styles ...
 }
 ```
+to apply styling in the 1st level shadow dom.
 
-Style is transferred to child elements of the custom element.
+Or like this:
+```
+* /deep/ {
+  @import ... material design styles ...
+}
+```
+to apply styling to all nested levels of shadowdom
 
 
 ## Resources: Tips and tricks, using Polying and using Material Design
 
-Sidenote: https://disqus.com/profile/login/ , apparently similar to our login
+Sidenote: https://disqus.com/profile/login/ , apparently similar to our login.
+**Edit**: Since login form is e-di login, the statement above is no longer true.
 
 ### Header that react to scrolling (core-scroll-header-panel)
 https://www.polymer-project.org/components/core-scroll-header-panel/demo.html
-
 
 ### Example polymer app:
 https://www.polymer-project.org/apps/topeka/
@@ -125,21 +118,21 @@ https://www.polymer-project.org/components/core-animated-pages/demos/nested.html
 
 ## Resarch: egov related
 
-Polygons for country-boundaries:
+### Polygons for country-boundaries:
 https://www.google.com/fusiontables/data?docid=1N2LBk4JHwWpOY4d9fobIn27lfnZ5MDy-NoqqRpk&pli=1#rows:id=1
 
-Google chart with maps:
+### Google chart with maps:
 https://developers.google.com/chart/image/docs/gallery/new_map_charts
 
-Map, charts
+### Map, charts
 https://github.com/mozilla/metrics-graphics
 https://github.com/search?o=desc&q=chart&s=stars&type=Repositories&utf8=%E2%9C%93
 http://gionkunz.github.io/chartist-js/examples.html
 !!! https://github.com/benpickles/peity
 
-favicon chart progress: http://lipka.github.io/piecon/
+**favicon chart progress**: http://lipka.github.io/piecon/
 
-polymer charts: https://github.com/robdodson/chart-elements
+**polymer charts**: https://github.com/robdodson/chart-elements
 
 http://plottablejs.org/components/
 http://codepen.io/anon/pen/QwvPmL?editors=001

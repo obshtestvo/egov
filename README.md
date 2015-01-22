@@ -22,7 +22,7 @@ bower install
 python3 -m http.server
 ```
 
-Go to http://127.0.0.0:8000/layout.html
+Go to http://127.0.0.0:8000/
 
 
 ### Implementation details
