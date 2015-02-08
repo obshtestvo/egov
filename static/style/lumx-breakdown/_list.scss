@@ -1,0 +1,19 @@
+@import "../../lib/lumx/dist/scss/main/objects/objects.bare-list";
+@import "../../lib/lumx/dist/scss/main/objects/objects.list";
+
+.list-content-tile--one-line strong em {
+  font-style: normal;
+  font-weight: bold;
+  padding-right: 0.3em;
+  font-size: 1em;
+  border-radius: $light-green-800;
+}
+
+.list-secondary-tile {
+  .icon {
+    text-align: right;
+    &.i-signal {
+      font-size: 0.95em;
+    }
+  }
+}

@@ -1,187 +1,317 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="egov">
 <head>
     <meta charset="utf-8">
     <title>egov</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<script src="/static/lib/webcomponentsjs/webcomponents.js"></script>-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,100,300,700italic,900,500&subset=latin,cyrillic'
+    <meta name="viewport" content="width=device-width" initial-scale=1.0" maximum-scale=1.0" user-scalable=no"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400"700"400italic,100,300,700italic,900,500&subset=latin,cyrillic'
           rel='stylesheet' type='text/css'>
-    <!--<link rel="import" href="/static/lib/paper-input/paper-input.html">-->
-    <!--<link rel="import" href="/static/lib/paper-ripple/paper-ripple.html">-->
-    <!--<link rel="import" href="/static/lib/paper-button/paper-button.html">-->
-    <link rel="stylesheet" href="/static/lib/waves/dist/waves.min.css">
-    <link rel="stylesheet" href="/static/lib/magnific-popup/dist/magnific-popup.css">
-    <link rel="stylesheet" href="/static/lib/drop/css/drop-theme-arrows-bounce-dark.css">
-    <link rel="stylesheet" href="/static/lib/drop/css/drop-theme-arrows-bounce.css">
-    <link rel="stylesheet" href="/static/lib/drop/css/drop-theme-basic.css">
-    <link rel="stylesheet" href="/static/lib/drop/css/drop-theme-hubspot-popovers.css">
     <link rel="stylesheet" href="/static/style/app.css">
 </head>
 <body class="dash">
-<div id="marketplace">
-    <div class="card toolbar-card">
-        <div class="toolbar">
-            <div class="toolbar__left mr">
-                <button class="btn btn--l btn--white btn--icon">
-                    <i class="mdi mdi--menu"></i>
-                </button>
-            </div>
 
-            <span class="toolbar__label fs-title">Навигация</span>
+<marketplace>
+    <card>
+        <div class="title">Профил и известия</div>
+        <p>
+            Начална страница. <br/>
+            Active by default.
+        </p>
 
-            <div class="toolbar__right">
-                icons here
-            </div>
-        </div>
-    </div>
-    <div class="apps">
-        <div class="gutter-sizer"></div>
-        <div class="grid-sizer"></div>
-        <div class="item">
-            <div class="card">
-                <div class="card__top">
-                    <strong class="card-title">Сигурност</strong>
-                </div>
-
-                <div class="card__content">
-                    <div class="paragraph">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia
-                            malesuada.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card__actions">
-                    <button class="btn btn--m btn--black btn--flat">Yes</button>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="card__top">
-                    <strong class="card-title">Lorem Ipsum</strong>
-                </div>
-
-                <div class="card__content">
-                    <div class="paragraph">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia
-                            malesuada.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card__actions">
-                    <button class="btn btn--m btn--black btn--flat">Yes</button>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="card__top">
-                    <strong class="card-title">Lorem Ipsum</strong>
-                </div>
-
-                <div class="card__content">
-                    <div class="paragraph">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia
-                            malesuada.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card__actions">
-                    <button class="btn btn--m btn--black btn--flat">Yes</button>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="card__top">
-                    <strong class="card-title">Lorem Ipsum</strong>
-                </div>
-
-                <div class="card__content">
-                    <div class="paragraph">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia
-                            malesuada.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card__actions">
-                    <button class="btn btn--m btn--black btn--flat">Yes</button>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="card__top">
-                    <strong class="card-title">Lorem Ipsum</strong>
-                </div>
-
-                <div class="card__content">
-                    <div class="paragraph">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia
-                            malesuada.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card__actions">
-                    <button class="btn btn--m btn--black btn--flat">Yes</button>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="card__top">
-                    <strong class="card-title">Lorem Ipsum</strong>
-                </div>
-
-                <div class="card__content">
-                    <div class="paragraph">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia
-                            malesuada.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card__actions">
-                    <button class="btn btn--m btn--black btn--flat">Yes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="scroll-test"></div>
-</div>
-<div id="app">
-    <div class="cover main">
-        <div class="fab action main drop-theme-arrows.css">
-            <a class="primary">
-                <button class="btn btn--xl btn--red btn--fab waves-effect waves-light primary">
-                    <i class="mdi cover icon mdi--add"></i>
+        <div class="fab">
+            <a class="primary open-popup-link" href="#pin-popup">
+                <button class="btn btn--xl btn--blue btn--fab waves-effect waves-light primary">
+                    <i class="mdi mdi--add cover icon"></i>
                 </button>
             </a>
         </div>
+    </card>
+    <div class="item security">
+        <div class="card">
+            <div class="card__top p+ card__top--has-subtitle">
+                <strong class="fs-subheading">
+                    <a href="">Сигурност</a>
+                </strong>
+                        <span class="tc-black-2 display-block location fs-body-1">
+                            община Ракитово
+                            <i class="mdi icon mdi--location-on"></i>
+                        </span>
+                <i class="mdi icon expand mdi--launch"></i>
+            </div>
+            <div class="scrollable" scrollbar="card" scrollbar-shadow="true">
+                <ul class="list">
+                    <li class="forest list-row list-row--has-separator list-row--is-clickable list-row--has-secondary">
+                        <div class="list-content-tile list-content-tile--one-line">
+                            <strong><em>20%</em> гори</strong>
+                        </div>
+                        <a class="list-secondary-tile" href="#">
+                            <i class="icon icon--s icon--green icon--flat mdi i-signal"></i>
+                        </a>
+
+                        <div class="ct-chart"></div>
+                    </li>
+                    <li class="pollution list-row list-row--has-separator list-row--is-clickable list-row--has-secondary">
+                        <div class="list-content-tile list-content-tile--one-line">
+                            <strong><em>4%</em> замърсяване</strong>
+                        </div>
+                        <div class="list-secondary-tile">
+                            <i class="icon icon--s icon--grey icon--flat mdi i-signal"></i>
+                        </div>
+                        <div class="ct-chart"></div>
+                    </li>
+                    <li class="stealing list-row list-row--has-separator list-row--is-clickable list-row--has-secondary">
+                        <div class="list-content-tile list-content-tile--one-line">
+                            <strong><em>14</em> кражби за седмица</strong>
+                        </div>
+                        <div class="list-secondary-tile">
+                            <i class="icon icon--s icon--grey icon--flat mdi i-signal"></i>
+                        </div>
+                        <div class="ct-chart"></div>
+                    </li>
+                    <li class="more list-row list-row--has-separator list-row--is-clickable">
+                        <div class="list-content-tile list-content-tile--one-line">
+                            <strong><em></em>още <i class="icon mdi mdi--arrow-forward"></i></strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cover">
+                <i class="icon mdi i-gradame-logo provider"></i>
+                <img src="static/img/gradame-map.jpg">
+                <button class="btn btn--xs btn--deep-orange btn--raised">Съобщи</button>
+            </div>
+        </div>
     </div>
-    <div class="scroll-test"></div>
-</div>
+    <div class="item">
+        <div class="card">
+            <div class="card__img card__img--top">
+                <img src="static/img/cultures.jpg">
+                <strong class="fs-subheading tc-white-1 display-block">Опознай различни култури</strong>
+            </div>
+
+            <div class="p+ fs-body-1 ">
+                Обяснение за различните култури и разбирания. Превенция
+                на насилие чрез запознаване с „различното“
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top p+ card__top--has-subtitle">
+                <strong class="fs-subheading">Намери транспорт</strong>
+                        <span class="tc-grey-600 display-block location fs-body-1">
+                            текущо местоположение
+                            <i class="mdi icon mdi--location-on"></i>
+                        </span>
+                <i class="mdi icon expand mdi--launch"></i>
+            </div>
+
+            <div class="cover">
+                <img data-src="holder.js/240x70/#E65100:#FFB74D/text:карта на текуща локация/size:6">
+                <button class="btn btn--xs btn--grey btn--raised">От...До</button>
+            </div>
+            <div class="card__content">
+                Според вид за колко минути ще стигнеш
 
 
-<script src="/static/lib/zepto/zepto.min.js"></script>
-<script src="/static/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-<script src="/static/lib/drop/drop.min.js"></script>
-<script src="/static/lib/waves/dist/waves.min.js"></script>
-<script src="/static/lib/packery/dist/packery.pkgd.min.js"></script>
-<script src="/static/lib/draggabilly/draggabilly.js"></script>
-<script src="/static/script/app.js"></script>
+                <lx-text-field label="Last name">
+                    <input type="text" ng-model="textFields.lastName">
+                </lx-text-field>
+
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--s btn--raised btn--blue">Градски</button>
+                <button class="btn btn--s btn--raised btn--deep-purple">Метро</button>
+                <button class="btn btn--s btn--raised btn--orange">Taxi</button>
+                <button class="btn btn--s btn--raised btn--black">Uber</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top p+">
+                <strong class="fs-subheading">Имоти</strong>
+                <i class="mdi icon expand mdi--launch"></i>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Търси имот" редактирай твоя" предложи твоя за продан/наем.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--xs btn--light-blue btn--raised">Търси</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top">
+                <strong class="fs-subheading">Храна</strong>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Търсачка по име" сертификат" съдържание (приемерно консерванти).
+                        Suggested продукти и рецепти според сезон и регион.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top">
+                <strong class="fs-subheading">Цени - bookmarked</strong>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Валути-GBP" бензин" сирене „Иван“.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top">
+                <strong class="fs-subheading">Пари</strong>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Колко отива за кола" за имот" за осигуровки. Колко отиват за дарения.
+                        КОлко за такси. тн. Разбивка. Разходи по спешност: водя" ток" лицензи за практика
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top">
+                <strong class="fs-subheading">Здраве</strong>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Болен съм - какво да правя.(инфо от точно.бг)
+                        Рецепти" лекарства - колко пъти кога - също и в графика
+                        Здравни осигуровки. Намери доктор - от 7-9 вечер или ASAP.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top">
+                <strong class="fs-subheading">Местна култура</strong>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Събор от с. Бобошево. Безплатни музеи. Концерт за благотворителност. Къмпинг. Тур.
+                        забележителности.
+                        Разходки.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top">
+                <strong class="fs-subheading">Правилата (ex-закони)</strong>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Какво се е променило" какво ново тн. опция „Искам да наруша правилата“
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top">
+                <strong class="fs-subheading">Tips&Tricks</strong>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Как да спестя от сметки (спрямо квадратура на имот примерно)" спрямо квартал" възраст.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card__top">
+                <strong class="fs-subheading">Фермерско</strong>
+            </div>
+
+            <div class="card__content">
+                <div class="paragraph">
+                    <p>
+                        Торове. Цена на продукти (мялко" картофи..).
+                        Известия като „провери си инструментите“
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat">Yes</button>
+            </div>
+        </div>
+    </div>
+</marketplace>
+<app-reader></app-reader>
+
+<script src="/static/script/bundle.js"></script>
 </body>
 </html>

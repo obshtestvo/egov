@@ -1,0 +1,31 @@
+@import "../lib/drop/css/drop-theme-arrows-bounce.css";
+@import "../lib/drop/css/drop-theme-arrows-bounce-dark.css";
+
+.drop-element.override {
+  max-width: 10%;
+  min-width:200px;
+  @include font-size(14px);
+  .drop-content {
+    @include polymer-z-depth(2);
+//    background: $colorParketFuga;
+    padding: 0.5em 0.8em;
+  }
+}
+
+.drop-content:before {
+  .drop-element.override.drop-element-attached-right.drop-element-attached-middle & {
+//    border-left-color: $colorParketFuga;
+  }
+  .drop-element.override.drop-element-attached-top.drop-element-attached-center & {
+//    border-bottom-color: $colorParketFuga;
+  }
+  .drop-element.override.drop-element-attached-bottom.drop-element-attached-center & {
+//    border-top-color: $colorParketFuga;
+  }
+}
+.drop-element .drop-content {
+  strong {
+    display: block;
+    @include font-size(16px)
+  }
+}

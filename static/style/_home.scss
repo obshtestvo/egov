@@ -1,5 +1,5 @@
 .home {
-  min-height: (round($base-spacing-unit*3)+round($size-l*3))*2;
+  min-height: (round($base-spacing-unit*6)+round($size-l*3))*2;
   h1, .caption, .login .heading {
     text-align: center;
     position: absolute;
@@ -31,7 +31,7 @@
   }
   .login .heading {
     margin-bottom: 0.5%;
-    bottom: halve($size-xl) + halve($base-spacing-unit);
+    bottom: halve($size-xl) + $base-spacing-unit;
     color: $teal-A700;
     font-weight: 400;
   }
@@ -73,7 +73,7 @@
     line-height: 1em;
     color: $grey-700;
     white-space: nowrap;
-    padding-left: $base-spacing-unit;
+    padding-left: 2*$base-spacing-unit;
     &:before {
       content: '';
       display: block;
@@ -84,7 +84,7 @@
       font-weight: 500;
       background: $white;
       @include polymer-z-depth(1);
-      border-radius: $md-base-round;
+      border-radius: $base-round;
       padding: quarter($padding);
       padding-top: round($padding/7);
       padding-bottom: round($padding/7);

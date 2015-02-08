@@ -17,17 +17,22 @@ I'm created as a demonstration which purpose is:
 
 ### Getting started
 Run:
-```
+
+```sh
+npm install
 bower install
-python3 -m http.server
+webpack
+python3 -m http.server # or python -m SimpleHTTPServer 
 ```
 
 Go to http://127.0.0.0:8000/
 
 
 ### Implementation details
-1. just static pages so far
+1. still just static pages
 1. uses `bower` for fronend package manager
+1. uses `webpack` for javascript loading, packing and minimizing
+1. uses `angular` directives with a project-specific directive factory
 1. uses `SCSS` for styling and `JavaScript` for scripting.
 1. uses google material design as basis for its UI and UX.
 1. uses `fontcustom` to automatically generate icon fonts from svgs.
@@ -40,19 +45,22 @@ See [RESEARCH.md](RESEARCH.md) for more details.
 
 ```
 egov
-├── bower.json      // descriptor of external frontend dependencies 
-├── index.html      // login screen
-├── dash.html       // egov dashboard screen
+├── bower.json         // descriptor of external frontend dependencies 
+├── index.html         // login screen
+├── dash.html          // egov dashboard screen
 ├── LICENSE
-├── RESEARCH.md     // research notes
+├── RESEARCH.md        // research notes
 └── static
-    ├── fonts
+    ├── element
+    │   ├── ....       // pseudo-webcomponents written as angular directives
+    ├── font
+    │   └── egov-icons // project-sepecific icon font
     ├── img
-    │   └── vectors // svgs for font icon
+    │   ├── vectors    // svgs for icon font
     │   └── <other images>
     ├── lib
-    │   ├── ....    // external frontend dependencies
-    ├── script      // app-specific javascripts
-    └── style       // app-specific SCSS and overrides of external dependencies styling
+    │   ├── ....       // external frontend dependencies
+    ├── script         // app-specific javascripts
+    └── style          // app-specific SCSS and overrides of external dependencies styling
         └── lumx-breakdown //
 ```

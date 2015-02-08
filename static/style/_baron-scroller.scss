@@ -1,0 +1,44 @@
+.scroller {
+  height: 100%;
+}
+.scroller__track {
+  display: none;
+}
+.single-pointer {
+  .scroller {
+    overflow-y: scroll;
+    @include prefixer(overflow-scrolling, touch, ('webkit'));
+    &::-webkit-scrollbar {
+      /* Prevents webkit cross-direction scrolling bug */
+      width: 0;
+    }
+  }
+
+  .scroller__track {
+    display: block;
+    position: absolute;
+    opacity: 0.2;
+    right: 4px;
+    top: 10px;
+    bottom: 4px;
+    width: 10px;
+    background: rgba(0, 0, 0, .1);
+
+    .scroller__bar {
+      /* The bar. You should define width, right position and background */
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      width: 10px;
+      background: #999;
+    }
+  }
+
+  .scrolling > .scroller__track {
+    opacity: 1;
+  }
+
+  .scrolling-intent > .scroller__track {
+    opacity: 1;
+  }
+}

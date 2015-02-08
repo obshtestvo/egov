@@ -25,10 +25,14 @@
 [data-icon]:before,
 .i-fingerprint:before,
 .i-fingerprint-simple:before,
+.i-gradame-logo:before,
+.i-handgesture:before,
 .i-heraldry:before,
 .i-id-chip:before,
 .i-id-mix:before,
-.i-id-text:before {
+.i-id-text:before,
+.i-location-pin:before,
+.i-signal:before {
   display: inline-block;
   font-family: "egov-icons";
   font-style: normal;
@@ -45,14 +49,22 @@
 
 .i-fingerprint:before { content: "\f100"; }
 .i-fingerprint-simple:before { content: "\f102"; }
+.i-gradame-logo:before { content: "\f107"; }
+.i-handgesture:before { content: "\f106"; }
 .i-heraldry:before { content: "\f101"; }
 .i-id-chip:before { content: "\f103"; }
 .i-id-mix:before { content: "\f104"; }
 .i-id-text:before { content: "\f105"; }
+.i-location-pin:before { content: "\f108"; }
+.i-signal:before { content: "\f109"; }
 
 $font-egov-icons-fingerprint: "\f100";
 $font-egov-icons-fingerprint-simple: "\f102";
+$font-egov-icons-gradame-logo: "\f107";
+$font-egov-icons-handgesture: "\f106";
 $font-egov-icons-heraldry: "\f101";
 $font-egov-icons-id-chip: "\f103";
 $font-egov-icons-id-mix: "\f104";
 $font-egov-icons-id-text: "\f105";
+$font-egov-icons-location-pin: "\f108";
+$font-egov-icons-signal: "\f109";

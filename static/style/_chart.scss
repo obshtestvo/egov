@@ -1,0 +1,37 @@
+@import "../lib/chartist/dist/scss/settings/chartist-settings";
+@import "../lib/chartist/dist/scss/chartist";
+
+#top-charts {
+  @extend .clearfix;
+}
+
+.chart-holder {
+  float: left;
+  text-align: center;
+  width: 33%;
+  padding: 1%;
+  padding-top: 15px;
+}
+
+.money-chart {
+  .fs-subhead {
+    margin-bottom: 0;
+  }
+  .ct-chart {
+    height: 100px;
+  }
+  .ct-series.ct-series-a {
+    .ct-area {
+      fill: $deep-purple-800;
+    }
+    .ct-line {
+      stroke: $blue-200
+    }
+  }
+}
+
+.currency-chart {
+  .ct-chart {
+    height: 100px;
+  }
+}

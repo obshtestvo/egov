@@ -50,8 +50,8 @@ no_hash: true
 #  templates: my/templates
 
 output:
-  fonts: ../../fonts/egov-icons
-  preview: ../../fonts/egov-icons
+  fonts: ../../font/egov-icons
+  preview: ../../font/egov-icons
   css: ../../style/
 #  preview: app/views/styleguide
 #  my-custom-template.yml: path/to/template/output

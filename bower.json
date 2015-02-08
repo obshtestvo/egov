@@ -12,6 +12,10 @@
     "magnific-popup": "*",
     "waves": "~0.5.5",
     "zepto": "~1.1.6",
-    "drop": "~0.5.5"
+    "drop": "~0.5.5",
+    "chartist": "~0.7.1",
+    "holderjs": "~2.5.0",
+    "baron": "~0.7.10",
+    "jquery-throttle-debounce": "*",
   }
 }

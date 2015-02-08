@@ -3,7 +3,7 @@
     position: absolute;
     top:0;
     height:100%;
-    overflow: auto;;
+    overflow: auto;
   }
   #marketplace {
     left:0;
@@ -15,11 +15,27 @@
     @media screen and (max-width:700px),screen and (max-device-width:700px) {
       width:29%;
     }
+    @media screen and (max-width:640px),screen and (max-device-width:640px) {
+      right:100%;
+      width:100%;
+      left:auto;
+    }
   }
   #marketplace .apps {
     .card {
       margin:0;
       height:100%;
+    }
+    .cover {
+      position: relative;
+      img {
+        display: block;
+      }
+      .btn {
+        position: absolute;
+        right:$base-spacing-unit;
+        bottom:$base-spacing-unit;
+      }
     }
     .gutter-sizer {
       width:1%;
@@ -27,10 +43,31 @@
     .grid-sizer,
     .item {
       width:240px;
+      display: inline-block;
     }
     .item {
-      height:250px;
-      background: red;
+      height:260px;
+      &.is-dragging {
+        z-index: 9999;
+        @include polymer-z-depth(4);
+      }
+      .fab {
+        position: absolute;
+        left:50%;
+        bottom:0;
+        @include transform(translateY(50%));
+        .btn--xl {
+          margin-left: -(halve($size-xl));
+        }
+      }
+      &.active {
+        height:auto;
+        .card {
+          border:2px solid $blue-500;
+          @include polymer-z-depth(2);
+          z-index: 9000;
+        }
+      }
     }
   }
   #app {
@@ -43,11 +80,14 @@
     @media screen and (max-width:700px),screen and (max-device-width:700px) {
       width:71%;
     }
+    @media screen and (max-width:640px),screen and (max-device-width:640px) {
+      width:100%;
+    }
     .cover.main {
       height: 45%;
       background: $orange-600;
       position: relative;
-      max-height: $base-spacing-unit*20;
+      max-height: $base-spacing-unit*40;
       .action.main {
         position: absolute;
         bottom:0;

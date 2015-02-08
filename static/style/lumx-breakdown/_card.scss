@@ -1,0 +1,31 @@
+@import "../../lib/lumx/dist/scss/main/objects/objects.card";
+
+.card__top {
+  &, .display-block {
+    line-height: 1em;
+  }
+  .display-block.fs-body-1 {
+    padding-top: 0.2em;
+  }
+
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color:$black;
+  }
+  .icon.expand {
+    position: absolute;
+    color: $grey-300;
+    right:$base-spacing-unit*2;
+    top: $base-spacing-unit*2;
+    @include font-size(18px);
+  }
+  &.card__top--has-subtitle .icon.expand {
+    top: $base-spacing-unit*3;
+  }
+  &:hover {
+    .icon.expand {
+      color: $grey-400;
+    }
+  }
+}

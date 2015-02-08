@@ -1,5 +1,7 @@
+@import "../lib/magnific-popup/dist/magnific-popup.css";
+
 .white-popup {
-  border-radius: $md-base-round;
+  border-radius: $base-round;
   position: relative;
   background: $white;
   padding: 20px;

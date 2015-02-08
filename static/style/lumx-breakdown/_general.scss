@@ -10,10 +10,10 @@
 @import "../../lib/lumx/dist/scss/core/generic/generic.normalize";
 @import "../../lib/lumx/dist/scss/core/tools/tools.responsive";
 @import "../../lib/lumx/dist/scss/core/generic/generic.reset";
-@import "../../lib/lumx/dist/scss/core/generic/generic.shared";
 
 @import "../../lib/lumx/dist/scss/core/base/base.page";
 @import "../../lib/lumx/dist/scss/core/base/base.typography";
+@import "../../lib/lumx/dist/scss/core/base/base.images";
 
 @import "../../lib/lumx/dist/scss/core/trumps/trumps.widths";
 @import "../../lib/lumx/dist/scss/core/trumps/trumps.spacing";
@@ -26,5 +26,8 @@
 @import "../../lib/lumx/dist/scss/main/animations/animations.shake";
 @import "../../lib/lumx/dist/scss/main/animations/animations.spin";
 
-@import "../../lib/lumx/dist/scss/main/objects/objects.card";
+@import "card";
+@import "list";
 @import "../../lib/lumx/dist/scss/main/objects/objects.toolbar";
+@import "../../lib/lumx/dist/scss/main/objects/objects.colors";
+@import "../../lib/lumx/dist/scss/main/objects/objects.text-field";

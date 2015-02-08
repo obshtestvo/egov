@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "8248a157f70a445fc303d169677499bb2ee81a5aae193dc4e0d664507c4e5793",
-    "current": "8248a157f70a445fc303d169677499bb2ee81a5aae193dc4e0d664507c4e5793"
+    "previous": "879206a703d3ef7fcc52cf63ad2796f573e5fc739f1f16e0ff6e69a906419c89",
+    "current": "879206a703d3ef7fcc52cf63ad2796f573e5fc739f1f16e0ff6e69a906419c89"
   },
   "fonts": [
     "../../fonts/egov-icons/egov-icons.ttf",
@@ -18,6 +18,14 @@
       "codepoint": 61698,
       "source": "./fingerprint-simple.svg"
     },
+    "gradame-logo": {
+      "codepoint": 61703,
+      "source": "./gradame-logo.svg"
+    },
+    "handgesture": {
+      "codepoint": 61702,
+      "source": "./handgesture.svg"
+    },
     "heraldry": {
       "codepoint": 61697,
       "source": "./heraldry.svg"
@@ -33,6 +41,14 @@
     "id-text": {
       "codepoint": 61701,
       "source": "./id-text.svg"
+    },
+    "location-pin": {
+      "codepoint": 61704,
+      "source": "./location-pin.svg"
+    },
+    "signal": {
+      "codepoint": 61705,
+      "source": "./signal.svg"
     }
   },
   "options": {
